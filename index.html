@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Source/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Source/favicon-16x16.png"
+    />
+    <title>Cliente Riot</title>
+  </head>
+  <body>
+    <main>
+      <div class="bg__video">
+        <video
+          src="./Source/video/Dragon_Sorceress_Zyra.mp4"
+          autoplay
+          loop
+        ></video>
+      </div>
+      <div class="container_main">
+        <img src="./Source/Img/Riot-Games-Logo.png" alt="riot-games" />
+        <div class="container_login">
+          Fazer login
+          <form>
+            <div>
+              <input required type="text" name="username" id="user_id" />
+              <span class="placeholder">Nome de usuário</span>
+            </div>
+            <div>
+              <input required type="password" name="password" id="user_pss" />
+              <span class="placeholder">Senha</span>
+            </div>
+            <div class="sociais_login">
+              <div class="facebook p">
+                <a href=""><img src="./Source/Img/icons8-facebook-50.png" /></a>
+              </div>
+              <div class="google">
+                <a href=""><img src="./Source/Img/icons8-google-48.png" /></a>
+              </div>
+              <div class="apple">
+                <a href=""><img src="./Source/Img/icons8-apple-30.png" /></a>
+              </div>
+              <div class="xbox">
+                <a href=""><img src="./Source/Img/icons8-xbox-30.png" /></a>
+              </div>
+            </div>
+            <label class="container"
+              >Manter login
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <div class="login_btn">
+              <input type="submit" value="→" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

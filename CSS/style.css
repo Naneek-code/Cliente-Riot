@@ -1,0 +1,212 @@
+@font-face {
+  font-family: League-Font;
+  src: url(../Source/Fonts/Spiegel-OTF/Spiegel-Bold.otf);
+}
+
+* {
+  font-family: League-Font;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: #343b45;
+  text-align: center;
+}
+
+main {
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  position: relative;
+  margin: 25px auto;
+  overflow: hidden;
+  width: 1600px;
+  height: 900px;
+  overflow: hidden;
+}
+
+.bg__video video {
+  width: 100%;
+}
+
+.container_main {
+  position: absolute;
+  height: 100%;
+  width: 450px;
+  top: 0;
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 65px 0px 0px 0px;
+}
+
+.container_main img {
+  width: 120px;
+  margin: 0 0 60px 0;
+}
+
+.container_login {
+  margin: 0 auto;
+  font-size: 28px;
+  width: 70%;
+}
+
+.container_login form {
+  overflow: hidden;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.placeholder {
+  cursor: text;
+  pointer-events: none;
+  position: relative;
+  float: left;
+  bottom: 37px;
+  left: 20px;
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #929292;
+  transition: 0.1s;
+}
+
+input:focus ~ span,
+input:valid ~ span {
+  transform: translateY(-18px) translateX(-10px);
+}
+
+.container_login form input {
+  box-sizing: border-box;
+  background-color: #ededed;
+  border-color: #ededed;
+  border-style: solid;
+  border-radius: 5px;
+  width: 100%;
+  padding: 20px 10px 10px 8px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.container_login form input:focus {
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  left: 25px;
+  font-size: 16px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  border-radius: 5px;
+  position: absolute;
+  top: 16px;
+  left: -15px;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #d13639;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.sociais_login {
+  display: flex;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 15px;
+}
+
+.sociais_login div {
+  margin-left: 10px;
+  width: 100px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.sociais_login div.p {
+  margin: 0;
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+
+.google {
+  background-color: #fff;
+}
+
+.apple {
+  background-color: black;
+}
+
+.xbox {
+  background-color: #107c10;
+}
+
+.sociais_login img {
+  position: relative;
+  top: 5px;
+  width: 25px;
+}
+
+.login_btn {
+  margin: 200px auto;
+  width: 80px;
+  height: 80px;
+}
+
+.login_btn input[type="submit"] {
+  border-radius: 35%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 36px;
+  color: #ededed;
+  padding: 0;
+  border-color: #ededed;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+}
+
+.active input[type="submit"] {
+  background-color: #d13639;
+  color: white;
+  border-color: #d13639;
+}
