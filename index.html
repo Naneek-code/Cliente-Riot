@@ -17,6 +17,20 @@
       href="./Source/favicon-16x16.png"
     />
     <title>Cliente Riot</title>
+    <script>
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "F12") {
+          e.preventDefault();
+        }
+      });
+      document.addEventListener(
+        "contextmenu",
+        function (e) {
+          e.preventDefault();
+        },
+        false
+      );
+    </script>
   </head>
   <body onselectstart="return false">
     <main>
@@ -32,7 +46,7 @@
         <img src="./Source/Img/Riot-Games-Logo.png" alt="riot-games" />
         <div class="container_login">
           Fazer login
-          <form>
+          <form id="form_login">
             <div>
               <input required type="text" name="username" id="user_id" />
               <span class="placeholder">Nome de usuário</span>
