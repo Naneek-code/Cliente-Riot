@@ -6,12 +6,8 @@ const clientButtons = document.querySelector(".btns_client");
 const riotInk = document.querySelector(".RIOT");
 const riotClient = document.querySelector(".RiotClient");
 
-function toggleClientState() {
-  if (riotClient.classList.contains("closed")) {
-    riotClient.classList.remove("closed");
-  } else {
-    riotClient.classList.add("closed");
-  }
+function toggleRiotClientVisibility() {
+  riotClient.classList.toggle("closed");
 }
 
 function toggleLoginButtonState() {
@@ -31,5 +27,5 @@ if (UserPss && UserLogin) {
   UserLogin.addEventListener("input", toggleLoginButtonState);
 }
 
-riotInk.addEventListener("dblclick", toggleClientState);
-clientButtons.addEventListener("click", toggleClientState);
+riotInk.addEventListener("dblclick", toggleRiotClientVisibility);
+clientButtons.addEventListener("click", toggleRiotClientVisibility);
