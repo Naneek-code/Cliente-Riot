@@ -137,6 +137,11 @@ input:valid ~ span {
   color: #333333;
 }
 
+.container_login form input:hover {
+  background-color: #e7e7e7;
+  border-color: #e7e7e7;
+}
+
 .container_login form input:focus {
   background-color: #f9f9f9;
 }
@@ -255,15 +260,27 @@ input:valid ~ span {
   height: 100%;
 }
 
+.login_btn input[type="submit"]:hover {
+  border-radius: 35%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 36px;
+  color: #ededed;
+  padding: 0;
+  border-color: #ededed;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+}
+
 .active input[type="submit"] {
   background-color: #d13639;
   color: white;
   border-color: #d13639;
 }
 
-.alert {
-  background-color: white;
-  border-radius: 6px;
-  text-align: center;
-  margin: 0 auto;
+.active input[type="submit"]:focus,
+.active input[type="submit"]:hover {
+  background-color: #bc252a;
+  color: white;
+  border-color: #bc252a;
 }

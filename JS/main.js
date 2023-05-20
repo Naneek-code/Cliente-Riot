@@ -6,9 +6,12 @@ const clientButtons = document.querySelector(".btns_client");
 const riotInk = document.querySelector(".RIOT");
 const riotClient = document.querySelector(".RiotClient");
 
-if (UserPss && UserLogin) {
-  UserPss.addEventListener("input", toggleLoginButtonState);
-  UserLogin.addEventListener("input", toggleLoginButtonState);
+function toggleClientState() {
+  if (riotClient.classList.contains("closed")) {
+    riotClient.classList.remove("closed");
+  } else {
+    riotClient.classList.add("closed");
+  }
 }
 
 function toggleLoginButtonState() {
@@ -19,13 +22,14 @@ function toggleLoginButtonState() {
   }
 }
 
+form_login.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
+
+if (UserPss && UserLogin) {
+  UserPss.addEventListener("input", toggleLoginButtonState);
+  UserLogin.addEventListener("input", toggleLoginButtonState);
+}
+
 riotInk.addEventListener("dblclick", toggleClientState);
 clientButtons.addEventListener("click", toggleClientState);
-
-function toggleClientState() {
-  if (riotClient.classList.contains("closed")) {
-    riotClient.classList.remove("closed");
-  } else {
-    riotClient.classList.add("closed");
-  }
-}
